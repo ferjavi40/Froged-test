@@ -5,6 +5,7 @@ import { MaterialModule } from '../material/material.module';
 import { PeopleComponent } from './pages/people/people.component';
 import { StarshipComponent } from './pages/starship/starship.component';
 import { PlanetsComponent } from './pages/planets/planets.component';
+import { FrogedRoutingModule } from './froged-routing.module';
 
 
 
@@ -17,7 +18,8 @@ import { PlanetsComponent } from './pages/planets/planets.component';
   ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    FrogedRoutingModule
   ],
   exports:[
     HomeComponent,

@@ -10,9 +10,9 @@
         </mat-toolbar>
 
         <mat-nav-list>
-            <a routerLink="./listado" mat-list-item (click)="sidenav.toggle()"><mat-icon mat-list-icon>list</mat-icon><span>Listado Personajes</span></a>
-            <a routerLink="./agregar" mat-list-item (click)="sidenav.toggle()"><mat-icon mat-list-icon>list</mat-icon><span></span><span>Listado de Planetas</span></a>
-            <a routerLink="./buscar" mat-list-item (click)="sidenav.toggle()"><mat-icon mat-list-icon>list</mat-icon><span>Listado de Naves</span></a>
+            <a routerLink="./people" mat-list-item (click)="sidenav.toggle()"><mat-icon mat-list-icon>list</mat-icon><span>Listado Personajes</span></a>
+            <a routerLink="./planets" mat-list-item (click)="sidenav.toggle()"><mat-icon mat-list-icon>list</mat-icon><span></span><span>Listado de Planetas</span></a>
+            <a routerLink="./starship" mat-list-item (click)="sidenav.toggle()"><mat-icon mat-list-icon>list</mat-icon><span>Listado de Naves</span></a>
         </mat-nav-list>
 
     </mat-sidenav>
@@ -24,13 +24,13 @@
 
         <span class="spacer"></span>
 
-        <button mat-raised-button color="primary">
+        <button routerLink="./" mat-raised-button color="primary">
             Home
         </button>
     </mat-toolbar>
 
     <div class="container">
-        <!-- <router-outlet></router-outlet> -->
+        <router-outlet></router-outlet>
 
     </div>
 

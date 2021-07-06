@@ -2,7 +2,15 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  
+  {
+    path: 'home',
+    loadChildren: () => import('./froged/froged.module').then(m => m.FrogedModule)
+  },
+  {
+    path: '**',
+    redirectTo:'home'
+
+  }
 ];
 
 @NgModule({
