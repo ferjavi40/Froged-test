@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { FrogedModule } from './froged/froged.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { FrogedModule } from './froged/froged.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FrogedModule
+    FrogedModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
