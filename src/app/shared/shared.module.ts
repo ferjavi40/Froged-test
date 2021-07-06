@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './pages/home/home.component';
 import { MaterialModule } from '../material/material.module';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    NavbarComponent
   ],
   imports: [
     CommonModule,
     MaterialModule
   ],
   exports:[
-    HomeComponent
+    NavbarComponent
   ]
 })
-export class FrogedModule { }
+export class SharedModule { }
