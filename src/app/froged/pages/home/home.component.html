@@ -1,0 +1,37 @@
+<mat-sidenav-container fullscreen>
+
+    <mat-sidenav #sidenav mode="push">
+        <mat-toolbar color="primary">
+            <span >Menu</span>
+            <span class="spacer"></span>
+            <button mat-icon-button (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </mat-toolbar>
+
+        <mat-nav-list>
+            <a routerLink="./people" mat-list-item (click)="sidenav.toggle()"><mat-icon mat-list-icon>list</mat-icon><span>Listado Personajes</span></a>
+            <a routerLink="./planets" mat-list-item (click)="sidenav.toggle()"><mat-icon mat-list-icon>list</mat-icon><span></span><span>Listado de Planetas</span></a>
+            <a routerLink="./starship" mat-list-item (click)="sidenav.toggle()"><mat-icon mat-list-icon>list</mat-icon><span>Listado de Naves</span></a>
+        </mat-nav-list>
+
+    </mat-sidenav>
+
+    <mat-toolbar>
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+
+        <span class="spacer"></span>
+
+        <button routerLink="./" mat-raised-button color="primary">
+            Home
+        </button>
+    </mat-toolbar>
+
+    <div class="container">
+        <router-outlet></router-outlet>
+
+    </div>
+
+</mat-sidenav-container>
