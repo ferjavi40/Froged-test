@@ -13,6 +13,7 @@ import { FrogedService } from '../../services/froged.service';
 export class PeopleComponent implements OnInit {
 
   people: PeopleInterface [] = [];
+  textPeople: string = 'Name'
 
   constructor(private _frogedService:FrogedService) { }
 
