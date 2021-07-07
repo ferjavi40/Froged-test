@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { VehiclesInterface } from '../../interfaces/vehicles.interface';
+import { FrogedService } from '../../services/froged.service';
+
 @Component({
   selector: 'app-starship',
   templateUrl: './starship.component.html',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StarshipComponent implements OnInit {
 
-  constructor() { }
+  starship: VehiclesInterface [] = [];
+
+  constructor(private _frogedService:FrogedService) { }
 
   ngOnInit(): void {
+
+    this._frogedService.getVehicles()
+        .subscribe((data:VehiclesInterface[])=>{
+          this.starship= data['results'];
+          console.log(this.starship);
+        })
+
   }
 
 }
