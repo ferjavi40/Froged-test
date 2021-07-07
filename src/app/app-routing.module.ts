@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './froged/pages/home/home.component';
 import { IntroComponent } from './froged/pages/intro/intro.component';
 import { PeopleComponent } from './froged/pages/people/people.component';
 import { PlanetsComponent } from './froged/pages/planets/planets.component';
