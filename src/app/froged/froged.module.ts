@@ -7,6 +7,7 @@ import { StarshipComponent } from './pages/starship/starship.component';
 import { PlanetsComponent } from './pages/planets/planets.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { IntroComponent } from './pages/intro/intro.component';
+import { ComponentsModule } from '../components/components.module';
 
 
 
@@ -22,7 +23,8 @@ import { IntroComponent } from './pages/intro/intro.component';
   imports: [
     CommonModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ComponentsModule
   ],
   exports:[
     HomeComponent,
