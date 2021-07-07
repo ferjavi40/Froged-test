@@ -4,14 +4,6 @@
   box-sizing: border-box;
 }
 
-/* :root {
-  --color1: #fafbfb;
-  --color2: hsl(202, 55%, 19%);
-  --color3: hsl(202, 55%, 9%);
-  --color4: hsl(202, 55%, 79%);
-  --color5: hsl(202, 55%, 29%);
-} */
-
 body {
   width: 100%;
   min-height: 100vh;
@@ -26,7 +18,7 @@ body {
 .card {
   position: relative;
   min-width: 200px;
-  max-width: 600px;
+  max-width: 400px;
   background: white;
   color: black;
   border-radius: 8px;
