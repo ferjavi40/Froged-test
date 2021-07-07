@@ -13,6 +13,7 @@ import { FrogedService } from '../../services/froged.service';
 export class PlanetsComponent implements OnInit {
 
   planets: PlanetsInterface [] = [];
+  textPlanet: string = 'Planet'
 
   constructor(private _frogedService:FrogedService) { }
 
@@ -21,7 +22,6 @@ export class PlanetsComponent implements OnInit {
     this._frogedService.getPlanets()
         .subscribe((data:PlanetsInterface[])=>{
           this.planets = data['results'];
-          console.log(this.planets)
         })
   }
 
