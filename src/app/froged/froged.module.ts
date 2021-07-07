@@ -17,7 +17,7 @@ import { IntroComponent } from './pages/intro/intro.component';
     PeopleComponent,
     StarshipComponent,
     PlanetsComponent,
-    IntroComponent
+    IntroComponent,
   ],
   imports: [
     CommonModule,
