@@ -2,15 +2,12 @@
   <div fxLayout="row wrap" fxLayoutGap="16px ">
     <div fxFlex="20%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let item of data" class="card">
       <div class="card-title">
-        <h1>{{ item.name }}</h1>
+        <h1><b>{{nameText}}: </b>{{ item.name }}</h1>
       </div>
-      <small class="card-category">21st April 2021</small>
-      <h3 class="card-heading">
-        Why coding is all fun until you realize you're addicted to coffee
-      </h3>
+      <p class="card-category"><b>Created:</b> {{item.created |date:'mediumDate'}}</p>
+      <p class="card-category"><b>Edited:</b> {{item.edited |date:'mediumDate'}}</p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nam
-        dignissimos veniam!
+
       </p>
       <ui-button [label]="label1"></ui-button>
       <ui-button [label]="label2"></ui-button>

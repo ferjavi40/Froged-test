@@ -11,6 +11,7 @@ import { FrogedService } from '../../services/froged.service';
 export class StarshipComponent implements OnInit {
 
   starship: VehiclesInterface [] = [];
+  textStarship: string ="Starship name"
 
   constructor(private _frogedService:FrogedService) { }
 
@@ -19,7 +20,6 @@ export class StarshipComponent implements OnInit {
     this._frogedService.getVehicles()
         .subscribe((data:VehiclesInterface[])=>{
           this.starship= data['results'];
-          console.log(this.starship);
         })
 
   }
