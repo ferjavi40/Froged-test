@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from './button/button.component';
 import { CardComponent } from './card/card.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -11,7 +12,8 @@ import { CardComponent } from './card/card.component';
     CardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FlexLayoutModule
   ],
   exports:[
     ButtonComponent,
