@@ -1,6 +1,6 @@
-<div class="card">
+<div *ngFor="let item of data" class="card">
   <div class="card-title">
-    <h1>Card title</h1>
+    <h1>{{item.name}}</h1>
   </div>
   <small class="card-category">21st April 2021</small>
   <h3 class="card-heading">
@@ -10,6 +10,6 @@
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nam dignissimos
     veniam!
   </p>
-  <a href="">Action 1</a>
-  <a href="">Action 2</a>
+  <ui-button [label]="label1"></ui-button>
+  <ui-button [label]="label2"></ui-button>
 </div>
