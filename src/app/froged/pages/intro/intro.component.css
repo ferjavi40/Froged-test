@@ -1,4 +1,15 @@
-.textIntro,h1{
-    margin-top: 2em;
-    text-align: center;
+.textIntro,
+h1 {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.image {
+  height: 40em;
+  background-size: cover;
+  width: auto;
+  background-image: url("../../../../assets/1.jpg");
+  background-position: 50% 50%;
+  border-radius: 8px;
+  margin-top: 3em;
 }
