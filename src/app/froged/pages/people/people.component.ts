@@ -22,6 +22,7 @@ export class PeopleComponent implements OnInit {
     this._frogedService.getPeople()
         .subscribe((data:PeopleInterface[])=>{
           this.people = data['results'];
+          console.log(this.people)
         })
   }
 
