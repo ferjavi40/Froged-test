@@ -5,6 +5,15 @@
         <h1><b>{{nameText}}: </b>{{ item.name }}</h1>
       </div>
       <p class="card-category"><b>Created:</b> {{item.created |date:'mediumDate'}}</p>
+      <p *ngIf="item.height" class="card-category"><b>Height:</b> {{item.height}} cm</p>
+      <p *ngIf="item.hair_color" class="card-category"><b>Hair color:</b> {{item.hair_color}}</p>
+
+      <p *ngIf="item.diameter" class="card-category"><b>Diameter:</b> {{item.diameter | number}} km</p>
+      <p *ngIf="item.population" class="card-category"><b>Poupulation:</b> {{item.population | number}} km</p>
+
+      <p *ngIf="item.model" class="card-category"><b>Model:</b> {{item.model}} </p>
+      <p *ngIf="item.passengers" class="card-category"><b>Passengers:</b> {{item.passengers}} </p>
+
       <p class="card-category"><b>Edited:</b> {{item.edited |date:'mediumDate'}}</p>
       <p>
 
