@@ -9,6 +9,8 @@ export class CardComponent implements OnInit {
   label1:string= "action 1";
   label2:string= "action 2";
 
+  color:string;
+
   @Input() data: string[];
   @Input() nameText: string;
 
